@@ -2,7 +2,7 @@
     <string name="app_name">ParkLearn</string>
     <string name="button_study">Time to study!</string>
     <string name="title_activity_park_list">ParkListActivity</string>
-
+    <string name="google_maps_key">AIzaSyAzOj8H545DPK9zbxOT8JKKdNkRn2MRD_A</string>
     <string name="button_RMNP">Rocky Mountain National Park</string>
     <string name="button_hotsprings">Hot Springs National Park</string>
     <string name="button_roosevelt">Theodore Roosevelt National Park</string>

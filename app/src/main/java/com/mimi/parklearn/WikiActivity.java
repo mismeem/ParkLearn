@@ -122,7 +122,7 @@ public class WikiActivity extends AppCompatActivity {
         Intent intent1 = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent1);
         webview.loadUrl(url + forlink);
-        
+
     }
 
 }
