@@ -42,6 +42,7 @@ public class OptionsActivity extends AppCompatActivity {
     public void openMaps(View view){
         Intent intent = new Intent(this, MapsActivity.class);
         intent.putExtra("id", newString);
+        
         startActivity(intent);
     }
 }
