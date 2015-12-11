@@ -8,6 +8,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,7 +19,7 @@ import android.widget.TextView;
 
 public class WikiActivity extends AppCompatActivity {
     Button clicked;
-
+    String ID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +27,10 @@ public class WikiActivity extends AppCompatActivity {
         setContentView(webview);
         Intent intent = getIntent();
         String ID = intent.getStringExtra("id");
-        if(intent.getStringExtra("id").equals(R.id.button_acadia)){
+        Log.v("wiki id", ID);
+
+/*
+        if(ID.equals(R.string.button_acadia)){
             clicked = (Button) findViewById(R.id.button_acadia);
         }
         else if(intent.getStringExtra("id").equals(R.id.button_arches)){
@@ -100,17 +104,18 @@ public class WikiActivity extends AppCompatActivity {
         }
         else if(intent.getStringExtra("id").equals(R.id.button_zion)){
             clicked = (Button) findViewById(R.id.button_zion);
-        }
-        String name = (String) clicked.getText();
+        }*/
+        //String name = (String) clicked.getText();
+
         String forlink = "";
-        for (int i = 0; i < name.length(); i++) {
-            if (name.charAt(i) == ' ') {
+        for (int i = 0; i < ID.length(); i++) {
+            if (ID.charAt(i) == ' ') {
                 forlink = forlink + '_';
             } else {
-                forlink = forlink + name.charAt(i);
+                forlink = forlink + ID.charAt(i);
             }
         }
-        String url = "https://en.wikipedia.ord/wiki/";
+        String url = "https://en.wikipedia.org/wiki/";
 
 
         Uri uri = Uri.parse(url + forlink);

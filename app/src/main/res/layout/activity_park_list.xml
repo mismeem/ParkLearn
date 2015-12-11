@@ -57,7 +57,7 @@
             android:text="@string/button_RMNP"
             android:id="@+id/button_RMNP"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
             android:text="@string/button_hotsprings"
             android:id="@+id/button_hotsprings"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
             android:text="@string/button_roosevelt"
             android:id="@+id/button_roosevelt"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
             android:text="@string/button_craterlake"
             android:id="@+id/button_craterlake"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
             android:text="@string/button_windcave"
             android:id="@+id/button_windcave"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
             android:text="@string/button_bigbend"
             android:id="@+id/button_bigbend"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -111,7 +111,7 @@
             android:text="@string/button_shenandoah"
             android:id="@+id/button_shenandoah"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
             android:text="@string/button_arches"
             android:id="@+id/button_arches"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
             android:text="@string/button_rainier"
             android:id="@+id/button_rainier"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -138,7 +138,7 @@
             android:text="@string/button_smokymountains"
             android:id="@+id/button_smokymountains"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,7 +147,7 @@
             android:text="@string/button_joshuatree"
             android:id="@+id/button_joshuatree"
             android:onClick="goToOptions"
-        />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
             android:text="@string/button_glacier"
             android:id="@+id/button_glacier"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -165,7 +165,7 @@
             android:text="@string/button_mesaverde"
             android:id="@+id/button_mesaverde"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
             android:text="@string/button_olympic"
             android:id="@+id/button_olympic"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -183,7 +183,7 @@
             android:text="@string/button_petrifiedforest"
             android:id="@+id/button_petrifiedforest"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -192,7 +192,7 @@
             android:text="@string/button_acadia"
             android:id="@+id/button_acadia"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -201,7 +201,7 @@
             android:text="@string/button_sequoia"
             android:id="@+id/button_sequoia"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -210,7 +210,7 @@
             android:text="@string/button_zion"
             android:id="@+id/button_zion"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -219,7 +219,7 @@
             android:text="@string/button_everglades"
             android:id="@+id/button_everglades"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -228,7 +228,7 @@
             android:text="@string/button_deathvalley"
             android:id="@+id/button_deathvalley"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -237,7 +237,7 @@
             android:text="@string/button_denali"
             android:id="@+id/button_denali"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -246,7 +246,7 @@
             android:text="@string/button_yosemite"
             android:id="@+id/button_yosemite"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -255,7 +255,7 @@
             android:text="@string/button_grandcanyon"
             android:id="@+id/button_grandcanyon"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -264,7 +264,7 @@
             android:text="@string/button_hawaii"
             android:id="@+id/button_hawaii"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -273,7 +273,7 @@
             android:text="@string/button_yellowstone"
             android:id="@+id/button_yellowstone"
             android:onClick="goToOptions"
-            />
+            android:background="#FFFFFF" />
     </LinearLayout>
 
 </ScrollView>
