@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 
 public class OptionsActivity extends AppCompatActivity {
-    String id;
+    public static String id;
     String newString;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class OptionsActivity extends AppCompatActivity {
         } else {
             newString= (String) savedInstanceState.getSerializable("id");
         }
+        
 
         Log.v("the id", newString);
     }
