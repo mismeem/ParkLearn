@@ -9,8 +9,14 @@ import android.view.View;
 public class OptionsActivity extends AppCompatActivity {
     public static String id;
     String newString;
+
+    /*
+     * gets the intent from the previous activity which contains the button information
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        assert savedInstanceState != null;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
         Intent intent = getIntent();
@@ -29,20 +35,56 @@ public class OptionsActivity extends AppCompatActivity {
         } else {
             newString= (String) savedInstanceState.getSerializable("id");
         }
-        
+
 
         Log.v("the id", newString);
     }
 
+    /*
+     * uses the intent to open a wikipedia page
+     */
+    private Intent intent1, intent2;
     public void openWiki(View view){
-        Intent intent = new Intent(this, WikiActivity.class);
-        intent.putExtra("id", newString);
-        startActivity(intent);
+        intent1 = new Intent(this, WikiActivity.class);
+        intent1.putExtra("id", newString);
+        startActivity(intent1);
+
+        openedWikiOptions();
+        assert wikiRepOK();
+
+    }
+    /*
+     * uses the intent to open a googlemaps page
+     */
+    public void openMaps(View view){
+        intent2 = new Intent(this, MapsActivity.class);
+        intent2.putExtra("id", newString);
+        startActivity(intent2);
+
+        openedMapsOptions();
+        assert mapsRepOK();
     }
 
-    public void openMaps(View view){
-        Intent intent = new Intent(this, MapsActivity.class);
-        intent.putExtra("id", newString);
-        startActivity(intent);
+    private boolean wikiRepOK(){
+        return intent1 != null && intent1.hasExtra("id");
     }
+
+    private boolean mapsRepOK(){
+        return intent2 != null && intent2.hasExtra("id");
+    }
+
+    private void openedWikiOptions(){
+        if (BuildConfig.DEBUG) {
+            Log.d("this tag", intent1.getStringExtra("id"));
+            Log.d("open", "opened WikiActivity");
+        }
+    }
+
+    private void openedMapsOptions(){
+        if (BuildConfig.DEBUG) {
+            Log.d("this tag", intent2.getStringExtra("id"));
+            Log.d("open", "opened MapsActivity");
+        }
+    }
+
 }
