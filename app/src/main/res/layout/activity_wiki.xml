@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.mimi.parklearn.WikiActivity">
+    tools:context="com.mimi.parklearn.WikiActivity"
+    android:background="#4a7dd85e">
 
 </RelativeLayout>
