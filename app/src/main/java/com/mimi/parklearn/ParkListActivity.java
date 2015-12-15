@@ -12,15 +12,18 @@ import android.widget.Button;
 import android.view.View.OnClickListener;
 
 public class ParkListActivity extends AppCompatActivity implements OnClickListener{
+    private Button clicked;
 
+    /*
+     * creates a scroll view of 25 buttons
+     * each button is labeled with the name of a national park
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        assert savedInstanceState == null;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_park_list);
-       /* Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
 
         final Button button0 = (Button) findViewById(R.id.button_RMNP);
         button0.setOnClickListener(this);
@@ -98,15 +101,38 @@ public class ParkListActivity extends AppCompatActivity implements OnClickListen
         button24.setOnClickListener(this);
 
     }
+    private CharSequence cs;
+    private Intent intent;
 
+
+    /*
+     * when a button is clicked, its label is sent to the next activity.
+     * This also opens the OptionsActivity page
+     */
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent(this, OptionsActivity.class);
-        CharSequence cs = ((Button) view).getText();
-        Log.v("this tag", cs.toString());
+        intent = new Intent(this, OptionsActivity.class);
+        cs = ((Button) view).getText();
+        //Log.v("this tag", cs.toString());
         intent.putExtra("id", cs.toString());
         startActivity(intent);
 
+        openedOptions();
+
+        assert clickRepOK();
     }
+
+    private boolean clickRepOK(){
+        return cs != null && intent.hasExtra("id");
+    }
+
+    private void openedOptions(){
+        if (BuildConfig.DEBUG) {
+            Log.d("this tag", cs.toString());
+            Log.d("open", "opened OptionsActivity");
+        }
+    }
+
+
 
 }
